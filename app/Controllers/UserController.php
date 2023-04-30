@@ -7,13 +7,14 @@ use App\Models\UserModel;
 
 class UserController extends Controller{
 
+  
+
     public function index(){
         $usuario = new UserModel();
         $data['usuarios'] = $usuario->orderBy('id', 'ASC')->findAll();
         $data['header'] = view('layout/header');
         $data['footer'] = view('layout/footer');
-        $data['template'] = view('layout/template');
-
+        
         return view('usuario/listar', $data);
     }
     public function crear(){
@@ -56,6 +57,5 @@ class UserController extends Controller{
         $usuario->where('id', $id)->update($id, $data);
         return redirect()->to(site_url('listar'));
     }
-    
 
 }

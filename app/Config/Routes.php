@@ -54,3 +54,5 @@ $routes->post('guardar', 'UserController::guardar');
 $routes->get('eliminar/(:num)', 'UserController::borrar/$1');
 $routes->get('edit/(:num)', 'UserController::edit/$1');
 $routes->post('actualizar', 'UserController::actualizar');
+$routes->get('/', 'Home::index');
+$routes->get('/inicio', 'Home::inicio');
