@@ -56,3 +56,4 @@ $routes->get('edit/(:num)', 'UserController::edit/$1');
 $routes->post('actualizar', 'UserController::actualizar');
 $routes->get('/', 'Home::index');
 $routes->get('/inicio', 'Home::inicio');
+$routes->post('/login', 'Home::login');

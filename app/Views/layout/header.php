@@ -12,14 +12,13 @@
     }
     .bg_body{
       background-color: #505050;  
-     
     }
     /*==================== 
 	Footer 
 ====================== */
 
 /* Main Footer */
-footer .main-footer{	padding: 20px 0;	background: #505050;}
+footer .main-footer{	padding: 20px 0;	background: #505050; height: 30vh;}
 footer ul{	padding-left: 0;	list-style: none;}
 
 /* Copy Right Footer */
