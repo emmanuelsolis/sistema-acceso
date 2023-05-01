@@ -18,7 +18,7 @@
 ====================== */
 
 /* Main Footer */
-footer .main-footer{	padding: 20px 0;	background: #505050; height: 30vh;}
+footer .main-footer{	padding: 20px 0;	background: #505050; height: auto;}
 footer ul{	padding-left: 0;	list-style: none;}
 
 /* Copy Right Footer */
@@ -96,14 +96,14 @@ transition: all 250ms ease-in-out 0s;
 <body>
 <nav class="navbar navbar-expand-lg bg_body">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#"><?php echo session('usuario'); ?></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="<?php echo base_url('/salir') ?>"><strong>Salir</strong></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Link</a>
